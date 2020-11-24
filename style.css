@@ -122,7 +122,8 @@ h1.extra {
   margin: 50px 100px 10px;
 }
 
-.links a {
+.links a,
+a:visited {
   color: var(--brown);
   text-decoration-line: none;
 }
@@ -130,6 +131,8 @@ h1.extra {
 .links a:hover {
   color: var(--dark-brown);
 }
+
+
 
 #what {
   background-color: var(--brown);
@@ -236,4 +239,28 @@ h1.extra {
 
 .WEB p {
   color: var(--dark-brown);
+}
+
+#back-to-top {
+  font-family: pulpo-rust-100;
+  color: var(--dark-brown);
+  text-transform: uppercase;
+  position: fixed;
+  bottom: 75px;
+  right: 40px;
+}
+
+#back-to-top a,
+#back-to-top a:visited {
+  color: inherit;
+}
+
+#back-to-top a:hover {
+  color: var(--light-brown);
+}
+
+#back-to-top a,
+#back-to-top a:hover,
+#back-to-top a:visited {
+  text-decoration-line: none;
 }
