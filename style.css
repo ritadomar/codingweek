@@ -3,8 +3,18 @@
   margin: 0;
 }
 
-span {
-  color: blue;
+:root {
+  --dark-brown: rgb(65, 37, 24);
+  --brown: brown;
+  --light-brown: #742c00;
+  --yellow: rgb(236, 207, 75);
+  --whitish: #f1f4f8;
+}
+
+body {
+  font-family: gibbs, sans-serif;
+  font-size: 25px;
+  color: #f1f4f8;
 }
 
 #logo {
@@ -13,7 +23,7 @@ span {
   margin: 0 auto;
 }
 
-.landing {
+#landing {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,6 +36,13 @@ span {
   padding: 200px;
 }
 
+.blood {
+  position: absolute;
+  width: 500px;
+  top: 0px;
+  right: 0px;
+}
+
 h1.codeweek {
   font-family: antarctican-headline, sans-serif;
   font-weight: 700;
@@ -33,21 +50,28 @@ h1.codeweek {
   font-size: 200px;
   text-transform: uppercase;
   text-align: center;
-  margin: -50px 0 0 0;
+  line-height: 90%;
+  margin: 0;
   padding: 0;
   color: #742c00;
 }
 
 h1.extra {
-  font-family: pulpo-rust-75, serif;
+  font-family: pulpo-rust-100, serif;
   font-weight: 400;
   font-style: normal;
   text-align: center;
   font-size: 100px;
+  line-height: 90%;
   text-transform: uppercase;
-  margin-top: -50px;
+  word-wrap: break-word;
+  margin: 0px 0 50px 0;
   color: rgb(65, 37, 24);
   mix-blend-mode: multiply;
+}
+
+.dark-brown {
+  color: rgb(65, 37, 24);
 }
 
 .hexagon {
@@ -58,7 +82,7 @@ h1.extra {
 
 .hex-left {
   width: 0;
-  border-right: 30px solid  #742c00;  );
+  border-right: 30px solid #742c00;
   border-top: 52px solid transparent;
   border-bottom: 52px solid transparent;
 }
@@ -67,7 +91,7 @@ h1.extra {
   display: flex;
   width: auto;
   height: 104px;
-  background-color: #742c00;  ;
+  background-color: #742c00;
   align-items: center;
 }
 
@@ -76,12 +100,140 @@ h1.extra {
   font-family: bungee, sans-serif;
   font-size: 40px;
   color: #eccf4b;
+  white-space: nowrap;
 }
 
 .hex-right {
   width: 0;
-  border-left: 30px solid  #742c00;
-  ;
+  border-left: 30px solid #742c00;
   border-top: 52px solid transparent;
   border-bottom: 52px solid transparent;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  font-family: antarctican-headline, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px 100px 10px;
+}
+
+.links a {
+  color: var(--brown);
+  text-decoration-line: none;
+}
+
+.links a:hover {
+  color: var(--dark-brown);
+}
+
+#what {
+  background-color: var(--brown);
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding: 100px 250px;
+  height: 110vh;
+}
+
+#what h2 {
+  font-family: antarctican-headline, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 150px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 20px;
+  color: var(--yellow);
+}
+
+#when {
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding: 100px 250px;
+  height: 110vh;
+}
+
+#when h2 {
+  font-family: antarctican-headline, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 150px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 20px;
+  color: var(--brown);
+}
+
+#when p {
+  color: var(--dark-brown);
+}
+
+#how {
+  background-color: var(--brown);
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding: 100px 250px;
+  height: 110vh;
+}
+
+#how h2 {
+  font-family: antarctican-headline, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 150px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 20px;
+  color: var(--yellow);
+}
+
+#roles {
+  display: flex;
+  height: 100vh;
+}
+
+.UX {
+  width: 50%;
+  background-color: var(--light-brown);
+  padding: 50px;
+}
+
+.UX h2 {
+  font-family: antarctican-headline, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 150px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--yellow);
+}
+
+.WEB {
+  width: 50%;
+  background-color: var(--yellow);
+  padding: 50px;
+}
+
+.WEB h2 {
+  font-family: antarctican-headline, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 150px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--light-brown);
+}
+
+.WEB p {
+  color: var(--dark-brown);
 }
