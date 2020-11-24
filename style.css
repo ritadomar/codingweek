@@ -1,3 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 span {
-    color:blue;
+  color: blue;
+}
+
+#logo {
+  mix-blend-mode: multiply;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(/images/grunge-wall-texture.jpg);
+  background-color: rgb(236, 207, 75);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 200px;
+}
+
+h1.codeweek {
+  font-family: antarctican-headline, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 200px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: -50px 0 0 0;
+  padding: 0;
+  color: #742c00;
+}
+
+h1.extra {
+  font-family: pulpo-rust-75, serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 100px;
+  text-transform: uppercase;
+  margin-top: -50px;
+  color: rgb(65, 37, 24);
+  mix-blend-mode: multiply;
+}
+
+.hexagon {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.hex-left {
+  width: 0;
+  border-right: 30px solid  #742c00;  );
+  border-top: 52px solid transparent;
+  border-bottom: 52px solid transparent;
+}
+
+.hex {
+  display: flex;
+  width: auto;
+  height: 104px;
+  background-color: #742c00;  ;
+  align-items: center;
+}
+
+.hex p {
+  padding: 16px;
+  font-family: bungee, sans-serif;
+  font-size: 40px;
+  color: #eccf4b;
+}
+
+.hex-right {
+  width: 0;
+  border-left: 30px solid  #742c00;
+  ;
+  border-top: 52px solid transparent;
+  border-bottom: 52px solid transparent;
 }
