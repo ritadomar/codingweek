@@ -27,7 +27,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(/images/grunge-wall-texture.jpg);
+  background-image: url(./images/grunge-wall-texture.jpg);
   background-color: rgb(236, 207, 75);
   background-blend-mode: multiply;
   background-position: center;
