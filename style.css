@@ -134,7 +134,6 @@ a:visited {
   color: var(--dark-brown);
 }
 
-
 .content {
   z-index: 0;
 }
@@ -254,6 +253,7 @@ a:visited {
   bottom: 75px;
   right: 40px;
   z-index: 1;
+  text-align: right;
 }
 
 #back-to-top a,
@@ -269,4 +269,31 @@ a:visited {
 #back-to-top a:hover,
 #back-to-top a:visited {
   text-decoration-line: none;
+}
+
+#back-to-top hr{
+  height: 3px;
+  border: 0;
+  background: var(--yellow);
+  margin: 20px 0px 10px;
+}
+
+.nav-links {
+  text-align: right;
+}
+
+.date {
+  font-family: bungee, sans-serif;
+  font-size: 80px;
+  text-align: center;
+  margin-top: 10%;
+  line-height: 130%;
+}
+
+.date sup{
+  font-size: 55px;
+}
+
+.red {
+  color: var(--brown);
 }
