@@ -158,6 +158,19 @@ a:visited {
   color: var(--yellow);
 }
 
+#what b {
+  color: var(--yellow);
+}
+
+.what-content {
+  display: flex;
+}
+
+.what-content img {
+  height: 75%;
+  margin-top: -100px;
+}
+
 #when {
   background-color: var(--yellow);
   display: flex;
