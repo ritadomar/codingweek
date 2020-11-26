@@ -172,7 +172,6 @@ a:visited {
   margin-top: -100px;
 }
 
-
 #what-wireframe {
   background-color: var(--brown);
   display: flex;
@@ -255,7 +254,7 @@ a:visited {
 }
 
 #how b {
-  color:  var(--yellow);
+  color: var(--yellow);
 }
 
 #how li {
@@ -264,7 +263,7 @@ a:visited {
   margin-top: 20px;
 }
 
-#how li::before{
+#how li::before {
   color: var(--yellow);
   content: counter(list) ".";
   font-family: bungee, sans-serif;
@@ -273,7 +272,7 @@ a:visited {
   line-height: 130%;
 }
 
-#how p{
+#how p {
   margin-top: 10%;
   margin-bottom: 20px;
 }
@@ -360,7 +359,7 @@ a:visited {
   text-decoration-line: none;
 }
 
-#back-to-top hr{
+#back-to-top hr {
   height: 3px;
   border: 0;
   background: var(--yellow);
@@ -379,7 +378,7 @@ a:visited {
   line-height: 130%;
 }
 
-.date sup{
+.date sup {
   font-size: 55px;
 }
 
