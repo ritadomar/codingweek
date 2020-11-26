@@ -172,6 +172,44 @@ a:visited {
   margin-top: -100px;
 }
 
+
+#what-wireframe {
+  background-color: var(--brown);
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding: 25px 250px;
+  height: 110vh;
+}
+
+#what-wireframe h2 {
+  font-family: antarctican-headline, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 150px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 10px;
+  color: var(--yellow);
+  line-height: 100%;
+}
+
+#what-wireframe b {
+  color: var(--yellow);
+}
+
+.what-wireframe-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.what-wireframe-content img {
+  margin-top: -50px;
+  width: 90%;
+  align-self: center;
+}
+
 #when {
   background-color: var(--yellow);
   display: flex;
@@ -238,6 +276,19 @@ a:visited {
 #how p{
   margin-top: 10%;
   margin-bottom: 20px;
+}
+
+#how a {
+  text-decoration-line: none;
+  color: var(--dark-brown);
+  background: var(--yellow);
+  /* text-transform: uppercase;
+  font-kerning: 2px; */
+  padding: 2px;
+}
+
+#how a:hover {
+  color: var(--light-brown);
 }
 
 #roles {
