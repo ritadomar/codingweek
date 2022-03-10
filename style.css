@@ -19,7 +19,7 @@ body {
 
 #logo {
   mix-blend-mode: multiply;
-  width: 200px;
+  width: 150px;
   margin: 20px auto;
 }
 
@@ -49,7 +49,7 @@ h1.codeweek {
   font-family: antarctican-headline, sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 200px;
+  font-size: 120px;
   text-transform: uppercase;
   text-align: center;
   line-height: 90%;
@@ -63,7 +63,7 @@ h1.extra {
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  font-size: 100px;
+  font-size: 90px;
   line-height: 90%;
   text-transform: uppercase;
   word-wrap: break-word;
@@ -85,14 +85,14 @@ h1.extra {
 .hex-left {
   width: 0;
   border-right: 30px solid #742c00;
-  border-top: 52px solid transparent;
-  border-bottom: 52px solid transparent;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
 }
 
 .hex {
   display: flex;
   width: auto;
-  height: 104px;
+  height: 90px;
   background-color: #742c00;
   align-items: center;
 }
@@ -108,8 +108,8 @@ h1.extra {
 .hex-right {
   width: 0;
   border-left: 30px solid #742c00;
-  border-top: 52px solid transparent;
-  border-bottom: 52px solid transparent;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
 }
 
 .links {
@@ -239,7 +239,7 @@ a:visited {
   flex-direction: column;
   margin-top: 0;
   padding: 100px 250px;
-  height: 110vh;
+  height: 100vh;
 }
 
 #how h2 {
@@ -249,7 +249,7 @@ a:visited {
   font-size: 150px;
   text-transform: uppercase;
   text-align: left;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   color: var(--yellow);
 }
 
@@ -273,7 +273,7 @@ a:visited {
 }
 
 #how p {
-  margin-top: 10%;
+  /* margin-top: 10%; */
   margin-bottom: 20px;
 }
 
@@ -372,14 +372,14 @@ a:visited {
 
 .date {
   font-family: bungee, sans-serif;
-  font-size: 80px;
+  font-size: 70px;
   text-align: center;
   margin-top: 10%;
   line-height: 130%;
 }
 
 .date sup {
-  font-size: 55px;
+  font-size: 50px;
 }
 
 .red {
