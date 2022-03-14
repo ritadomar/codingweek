@@ -1,10 +1,12 @@
 * {
   margin: 0;
+  scroll-behavior: smooth;
+  transition: all 400ms ease-in-out;
 }
 
 :root {
   --dark-brown: #412518;
-  --brown: #a52a2a;
+  --brown: #b63737;
   --light-brown: #742c00;
   --yellow: #eccf4b;
   --whittish: #f1f4f8;
@@ -14,6 +16,7 @@ body {
   font-family: "Gibbs", sans-serif;
   font-size: 24px;
   color: var(--whittish);
+  background-color: var(--brown);
 }
 
 /* HERO */
@@ -52,7 +55,7 @@ body {
 #hero h1 {
   font-family: "antarctican-headline", sans-serif;
   font-weight: 700;
-  font-size: 12vw;
+  font-size: 176px;
   text-transform: uppercase;
   text-align: center;
   line-height: 90%;
@@ -68,7 +71,7 @@ body {
 #hero h2 {
   font-family: "pulpo-rust-100", serif;
   text-align: center;
-  font-size: 7vw;
+  font-size: 120px;
   line-height: 90%;
   text-transform: uppercase;
   color: var(--dark-brown);
@@ -90,7 +93,7 @@ body {
   padding: 32px 16px;
   background-color: var(--light-brown);
   font-family: "bungee", sans-serif;
-  font-size: 3vw;
+  font-size: 50px;
   white-space: nowrap;
   color: var(--yellow);
 }
@@ -113,10 +116,10 @@ body {
 .links {
   width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-family: "antarctican-headline", sans-serif;
   font-weight: 700;
-  font-size: 7vw;
+  font-size: 112px;
   text-transform: uppercase;
 }
 
@@ -152,11 +155,199 @@ nav a:visited {
 }
 
 nav a:hover {
-  color: var(--brown);
+  color: var(--light-brown);
 }
 
 nav hr {
   height: 3px;
   border: 0;
   background: var(--yellow);
+}
+
+/* CONTENT */
+
+/* What section */
+#what {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  box-sizing: border-box;
+  padding: 24px 250px 100px;
+  background-color: var(--brown);
+}
+
+#what h2 {
+  font-family: "Antarctican-headline", sans-serif;
+  font-weight: 700;
+  font-size: 144px;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--yellow);
+  padding-bottom: 40px;
+}
+
+#what b {
+  color: var(--yellow);
+}
+
+/* When section */
+#when {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  box-sizing: border-box;
+  padding: 24px 250px 100px;
+  background-color: var(--yellow);
+}
+
+#when h2 {
+  font-family: "Antarctican-headline", sans-serif;
+  font-weight: 700;
+  font-size: 144px;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--brown);
+  padding-bottom: 40px;
+}
+
+#when p {
+  font-family: bungee, sans-serif;
+  font-size: 72px;
+  text-align: center;
+  line-height: 130%;
+  color: var(--dark-brown);
+}
+
+#when sup {
+  font-size: 40px;
+}
+
+#when .red {
+  color: var(--brown);
+}
+
+/* How section */
+
+#how {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  box-sizing: border-box;
+  padding: 24px 250px 100px;
+  background-color: var(--brown);
+}
+
+#how h2 {
+  font-family: "Antarctican-headline", sans-serif;
+  font-weight: 700;
+  font-size: 144px;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--yellow);
+  padding-bottom: 40px;
+}
+
+#how b {
+  color: var(--yellow);
+}
+
+#how a,
+#how a:visited {
+  color: var(--yellow);
+}
+
+#how a:hover {
+  color: var(--dark-brown);
+  background-color: var(--yellow);
+  text-decoration: none;
+}
+
+#how ol {
+  margin-top: 5%;
+  padding-left: 0;
+  list-style-position: inside;
+  line-height: 150%;
+}
+
+#how li {
+  padding-top: 16px;
+}
+
+#how li::marker {
+  color: var(--yellow);
+  font-family: bungee, sans-serif;
+  font-size: 32px;
+}
+
+/* WIREFRAMES.HTML */
+
+#wireframe {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 32px 250px;
+}
+
+#wireframe h1 {
+  font-family: "antarctican-headline", sans-serif;
+  font-weight: 700;
+  font-size: 120px;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 90%;
+  margin: 0;
+  padding: 0;
+  color: var(--yellow);
+}
+
+.example {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.example p {
+  align-self: flex-start;
+}
+
+.example b {
+  color: var(--yellow);
+}
+
+.example img {
+  width: 90%;
+  margin-top: -16px;
+}
+
+.scroll {
+  position: absolute;
+  margin-bottom: 0px;
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  bottom: 16px;
+  font-size: 14px;
+  color: var(--whittish);
+  text-decoration: none;
+}
+
+#uizard {
+  display: flex;
+  justify-content: center;
+  padding: 40px 40px;
 }
